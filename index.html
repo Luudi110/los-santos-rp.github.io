@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Los Santos RP — Premium RP</title>
+  <meta name="description" content="Los Santos RP — cinematic, immersive roleplay server.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome (Solid icons) - verified CDN link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <script>
+    // Quick runtime check: ensure Font Awesome stylesheet was loaded; logs a console warning if not.
+    (function(){
+      function isFAloaded(){
+        try{
+          for(var i=0;i<document.styleSheets.length;i++){
+            var href = document.styleSheets[i].href || '';
+            if(href.indexOf('fontawesome') !== -1 || href.indexOf('fontawesome-free') !== -1 || href.indexOf('font-awesome') !== -1) return true;
+          }
+        }catch(e){/* CORS can block access to href, ignore */}
+        return false;
+      }
+      if(!isFAloaded()){
+        console.warn('Font Awesome stylesheet not detected. Icons may not render.');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <div class="site-wrapper">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a class="brand" href="./">
+          <img src="assets/img/LosSantosRP.svg" srcset="assets/img/LosSantosRP.svg 1x, assets/img/LosSantosRP.png 2x" alt="Los Santos RP" class="site-logo" loading="lazy">
+          <span class="brand-text">Los Santos RP</span>
+        </a>
+
+        <nav class="nav" id="main-nav">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="rules.html">Rules</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn small" href="steam://connect/play.lossantosrp.com"><i class="fas fa-play" aria-hidden></i> <span class="nav-label">Join Server</span></a>
+          <a class="btn discord" href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord" aria-hidden></i> <span class="nav-label">Discord</span></a>
+
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu"><i class="fas fa-bars" aria-hidden></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero-inner container glass glass-hero">
+          <h1 class="hero-title">Welcome to <span class="accent">Los Santos RP</span></h1>
+          <p class="hero-sub">A cinematic, premium Los Santos roleplay experience — immersive stories, community-driven gameplay.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#join">Join Server</a>
+            <a class="btn btn-ghost" href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer">Discord</a>
+          </div>
+        </div>
+        <img class="hero-decor" src="assets/img/hero.svg" alt="Los Santos Sunset" loading="lazy">
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about container">
+        <h2 class="section-title">About <span class="accent">Los Santos RP</span></h2>
+        <p class="lead">Los Santos RP focuses on realism, community, and deep character-driven roleplay. Whether you're a cop, medic, entrepreneur, or one of the city's most notorious figures — your story matters here.</p>
+
+        <div class="cards">
+          <article class="card glass">
+            <div class="card-icon"><i class="fas fa-car-side icon" aria-hidden></i></div>
+            <h3>Realistic Systems</h3>
+            <p>Detailed policing, medical, and economic mechanics for meaningful choices.</p>
+          </article>
+
+<article class="card glass">
+            <div class="card-icon"><i class="fas fa-hands-helping icon" aria-hidden></i></div>
+            <h3>Active Community</h3>
+            <p>Dedicated staff and daily events keep roleplay alive and engaging.</p>
+          </article>
+
+          <article class="card glass">
+            <div class="card-icon"><i class="fas fa-theater-masks icon" aria-hidden></i></div>
+            <h3>Immersive Stories</h3>
+            <p>Deep narrative arcs and opportunities to shape the city.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="section features container">
+        <h2 class="section-title">Server Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card glass">
+            <div class="feature-icon"><i class="fas fa-shield-alt" aria-hidden></i></div>
+            <h4>Police RP</h4>
+            <p>Authentic law enforcement with clear role progression.</p>
+          </div>
+
+          <div class="feature-card glass">
+            <div class="feature-icon"><i class="fas fa-briefcase-medical" aria-hidden></i></div>
+            <h4>EMS</h4>
+            <p>Realistic medical systems and lifelike emergency response.</p>
+          </div>
+
+          <div class="feature-card glass">
+            <div class="feature-icon"><i class="fas fa-mask" aria-hidden></i></div>
+            <h4>Criminal RP</h4>
+            <p>Complex heists, gangs, and underground economies.</p>
+          </div>
+
+          <div class="feature-card glass">
+            <div class="feature-icon"><i class="fas fa-store" aria-hidden></i></div>
+            <h4>Businesses</h4>
+            <p>Player-run companies and economic gameplay.</p>
+          </div>
+
+          <div class="feature-card glass">
+            <div class="feature-icon"><i class="fas fa-code" aria-hidden></i></div>
+            <h4>Custom Scripts</h4>
+            <p>Unique features and optimizations exclusive to our server.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVER STATS -->
+      <section id="stats" class="section stats container">
+        <h2 class="section-title">Server Stats</h2>
+        <div class="stats-grid">
+          <div class="stat glass">
+            <div class="stat-value" id="stat-players">12</div>
+            <div class="stat-label">Players Online</div>
+          </div>
+          <div class="stat glass">
+            <div class="stat-value" id="stat-uptime">99.9%</div>
+            <div class="stat-label">Uptime</div>
+          </div>
+          <div class="stat glass">
+            <div class="stat-value" id="stat-whitelist">Open</div>
+            <div class="stat-label">Whitelist</div>
+          </div>
+        </div>
+        <p class="muted">Stats are dynamic and ready for integration with your server API or MySQL backend.</p>
+      </section>
+
+      <!-- JOIN -->
+      <section id="join" class="section join container">
+        <h2 class="section-title">How to Join</h2>
+        <ol class="steps">
+          <li>Create a Discord account and join our server.</li>
+          <li>Read the rules and apply to whitelist if required.</li>
+          <li>Connect to <strong>play.lossantosrp.com</strong> in-game.</li>
+          <li>Introduce your character and start roleplaying.</li>
+        </ol>
+        <div class="join-cta">
+          <a class="btn btn-primary large" href="#" onclick="scrollToSection('#hero');return false;">Join Now</a>
+          <a class="btn btn-ghost" href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer">Open Discord</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="logo-dot" aria-hidden></div>
+          <div>
+            <strong>Los Santos RP</strong>
+            <div class="muted">Los Santos — Sunset RP</div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord" aria-hidden></i> <span class="link-label">Discord</span></a>
+          <a href="rules.html"><i class="fas fa-gavel" aria-hidden></i> <span class="link-label">Rules</span></a>
+          <a href="#"><i class="fas fa-file-alt" aria-hidden></i> <span class="link-label">Apply</span></a>
+        </div>
+
+        <div class="footer-copyright">&copy; 2026 Los Santos RP. All rights reserved.</div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrapper -->
+</body>
+</html>
