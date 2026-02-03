@@ -1,0 +1,109 @@
+/* Los Santos RP — Modern, cinematic, neon-styled CSS
+   Colors: Sunset gold: #f0ce7e; Neon pink: #e61e94; Deep magenta: #c8046e; Dark night: #0f1027
+   Mobile-first responsive design, glassmorphism, subtle glow and transitions
+*/
+:root{
+  --bg: #0f1027;
+  --sunset: #f0ce7e;
+  --pink: #e61e94;
+  --magenta: #c8046e;
+  --glass: rgba(255,255,255,0.03);
+  --glass-2: rgba(255,255,255,0.02);
+  --text: #eaeaf6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background: linear-gradient(180deg, rgba(15,16,39,1) 0%, rgba(11,11,30,1) 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.container{max-width:1180px;margin:0 auto;padding:1.25rem}
+
+a{color:inherit;text-decoration:none}
+.muted{color:rgba(255,255,255,0.5);font-size:0.95rem}
+.lead{color:rgba(255,255,255,0.85);max-width:70ch}
+
+/* Header / Nav */
+.site-header{position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(15,16,39,0.9), rgba(15,16,39,0.75));backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:0.6rem;font-weight:700}
+.brand-text{font-family:Montserrat, sans-serif;color:var(--sunset);letter-spacing:0.4px}
+.logo-dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(45deg,var(--pink),var(--magenta));box-shadow:0 0 12px rgba(198,6,110,0.25)}
+
+.nav-list{display:flex;gap:1rem;align-items:center;margin:0;padding:0;list-style:none}
+.nav-list a{padding:0.5rem 0.75rem;border-radius:8px;color:rgba(255,255,255,0.9);font-weight:600}
+.nav-list a:hover{background:var(--glass);transition:all .18s ease}
+
+.nav-actions{display:flex;gap:0.6rem;align-items:center}
+.btn{display:inline-block;padding:0.5rem 0.9rem;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);font-weight:600}
+.btn.small{padding:0.35rem 0.7rem;font-size:0.95rem}
+.btn.discord{background:linear-gradient(90deg,var(--pink),var(--magenta));box-shadow:0 6px 28px rgba(198,6,110,0.18);border:0}
+.btn.primary{background:linear-gradient(90deg,var(--pink),var(--magenta));color:white;border:0}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.btn.large{padding:0.9rem 1.4rem;font-size:1.05rem}
+.mobile-toggle{display:none;background:transparent;border:0;color:var(--sunset);font-size:1.35rem}
+
+/* Hero */
+.hero{position:relative;padding:4.5rem 0 2rem;overflow:hidden}
+.hero-inner{position:relative;z-index:2}
+.hero-title{font-family:Montserrat, sans-serif;font-size:2.4rem;margin:0 0 .6rem;color:white;letter-spacing:-0.7px}
+.hero-title .accent{background:linear-gradient(90deg,var(--pink),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{margin:0 0 1rem;color:rgba(255,255,255,0.85);max-width:60ch}
+.hero-ctas{display:flex;gap:0.8rem;margin-top:1rem}
+.hero-decor{position:absolute;right:-10%;bottom:-10%;width:70%;opacity:0.28;filter:blur(18px);transform:translateZ(0)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(1,1fr);gap:1rem;margin-top:1.25rem}
+.card{background:linear-gradient(180deg,var(--glass),var(--glass-2));padding:1rem;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(4,4,16,0.6);transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(198,6,110,0.12)}
+.card-icon{font-size:1.75rem}
+
+/* Features grid */
+.features .feature-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:1rem}
+.feature-card{padding:1rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);text-align:center;transition:transform .18s ease,box-shadow .18s ease}
+.feature-card img{width:48px;filter:drop-shadow(0 6px 18px rgba(198,6,110,0.12))}
+.feature-card:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(198,6,110,0.12)}
+
+/* Stats */
+.stats-grid{display:flex;gap:1rem;flex-direction:column}
+.stat{background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:12px;text-align:center}
+.stat-value{font-size:1.6rem;font-family:Montserrat, sans-serif;color:var(--sunset)}
+
+/* Steps */
+.steps{padding-left:1rem}
+.steps li{margin:0.5rem 0}
+.join-cta{margin-top:1rem;display:flex;gap:0.8rem}
+
+/* Footer */
+.site-footer{padding:1.5rem 0 2.5rem;border-top:1px solid rgba(255,255,255,0.03);margin-top:2rem}
+.footer-inner{display:flex;gap:1rem;align-items:center;justify-content:space-between}
+.footer-links a{margin-left:1rem;color:rgba(255,255,255,0.8)}
+
+/* Responsive */
+@media(min-width:700px){
+  .hero-title{font-size:3.6rem}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .features .feature-grid{grid-template-columns:repeat(3,1fr)}
+  .stats-grid{flex-direction:row}
+}
+
+@media(max-width:700px){
+  .nav-list{display:none}
+  .mobile-toggle{display:inline-block}
+}
+
+/* utility */
+.skip-link{position:absolute;left:-9999px}
+
+/* small lively animations */
+@keyframes neonPulse{0%{text-shadow:0 0 6px rgba(230,30,148,0.1)}50%{text-shadow:0 0 18px rgba(198,6,110,0.2)}100%{text-shadow:0 0 6px rgba(230,30,148,0.1)}}
+.accent{animation:neonPulse 3.8s ease-in-out infinite}
+
+/* Accessibility focus */
+a:focus{outline:2px dashed var(--sunset);outline-offset:3px}
